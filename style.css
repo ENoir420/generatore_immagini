@@ -1,0 +1,26 @@
+
+body {
+  background: #1e1e1e;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+input, textarea, button {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  margin: 0.5rem;
+  width: 300px;
+  font-size: 1rem;
+}
+button {
+  background: #ff3366;
+  color: white;
+  cursor: pointer;
+}
+img {
+  margin-top: 2rem;
+  max-width: 100%;
+  border-radius: 10px;
+}
