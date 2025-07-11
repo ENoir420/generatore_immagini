@@ -1,4 +1,3 @@
-
 async function generateImage() {
   const prompt = document.getElementById('prompt').value;
   const token = document.getElementById('token').value;
@@ -14,8 +13,12 @@ async function generateImage() {
     body: JSON.stringify({ inputs: prompt })
   });
 
+  console.log("Response status:", response.status);
+  const data = await response.text();
+  console.log("Response data:", data);
+
   if (!response.ok) {
-    resultDiv.innerHTML = "❌ Errore durante la generazione.";
+    resultDiv.innerHTML = "❌ Errore durante la generazione:<br>" + data;
     return;
   }
 
